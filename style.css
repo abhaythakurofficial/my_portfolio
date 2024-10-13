@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: rgb(19, 127, 221);
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    width: 100%;
+    height: auto;
+}
+
+.background-img {
+    background-image: url(img_3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 40vw;
+}
+
+.nav_1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #07288b;
+    height: 5vw;
+    padding: 0 2vw;
+}
+
+.left {
+    color: white;
+    font-size: 2vw;
+    text-align: center;
+    margin: 0 2vw;
+}
+
+.nav_2 {
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+}
+
+.nav_3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+.nav_3 li {
+    list-style: none;
+}
+
+.nav_3 li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5vw;
+    padding: 1vw;
+    display: block;
+    transition: color 0.3s, transform 0.3s ease;
+    transform-origin: center center; /* Prevent shaking */
+}
+
+.right ul li a {
+    display: inline-block; /* Give it block-level properties */
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5vw;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.right ul li a:hover {
+    color: #bdbbb8; /* Hover color */
+    transform: scale(1.2); /* Smooth scaling */
+}
+
+.firstsection {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.leftsection {
+    width: 50%;
+    height: 100%;
+    font-size: 2vw;
+    font-family: 'Dancing Script', cursive;
+    margin: 10vw;
+}
+
+.rightsection {
+    width: 30%;
+}
+
+/* use this code with careful and understant it then work on it */
+.footer {
+    background-color: #2C3E50;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-1 {
+    font-size: 1vw;
+    color: white;
+    height: auto;
+    width: 100%;
+    margin-top: 1vw;
+    text-align: center;
+}
+.footer-2 a{
+    color: violet;
+}
+.footer-divider {
+    border: none;
+    height: 2px; /* Thickness of the white line */
+    background-color: white; /* Color of the white line */
+    width: 80%;
+    margin-left: 10%;
+}
+
+.footer-content {
+    display: flex;
+    height: auto;
+    width: 100%;
+}
+
+.footer-2, .footer-3, .footer-4 {
+    height: auto;
+    width: 33.33%;
+    margin-top: 3vw;
+}
+
+.footer-2 {
+    margin-left: 5vw;
+    font-size: 1vw;
+    color: white;
+}
+
+.footer-3 {
+    font-size: 1vw;
+    color: white;
+
+}
+
+.footer-4 {
+    font-size: 1vw;
+    color: white;
+    
+}
+
+.footer-5{
+    height: auto;
+    width: 100%;
+    font-size: 1vw;
+    color: white;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin: 3vw 0;
+
+}
+
+.flag-icon{
+    width: 3vw;
+    height: auto;
+}
+
+/* use this code with careful and understant it then work on it */
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .nav_1{
+        height: 7vw;
+    }
+    .nav_2{
+        margin: 2vw 0;
+    }
+    .leftsection {
+        font-size: 2.5vw;
+    }
+    .rightsection {
+        width: 40%;
+    
+    }
+    
+    .footer-1 {
+        font-size: 2vw;
+    }
+    
+    
+    
+    .footer-divider {
+        width: 90%;
+        margin-left: 5vw;
+    }
+    
+    
+    .footer-2 {
+        margin-left: 5vw;
+        font-size: 1.5vw;
+    }
+    
+    .footer-3 {
+        font-size: 1.5vw;
+        margin-left: 3vw;
+    
+    }
+    
+    .footer-4 {
+        font-size: 1.5vw;
+        
+    }
+    
+    .footer-5{
+        font-size: 1.5vw;
+        text-align: center;
+    }
+    
+    .flag-icon{
+        width: 3vw;
+        height: auto;
+    }
+    
+}
+/* Responsive Design */
+@media (max-width: 426px) {
+    .nav_1{
+        height: 10vw;
+    }
+    .nav_2{
+        margin: 2vw 0;
+    }
+    .left{
+        font-size: 4vw;
+    }
+    .nav_3{
+        gap: 1vw;
+    }
+    .right ul li a{
+        font-size: 2.5vw;
+    }
+    .background-img{
+        height: auto;
+    }
+    .firstsection{
+        display: flex;
+        flex-direction: column;
+    }
+    .leftsection {
+        width: 100%;
+        text-align: center;
+        font-size: 7vw;
+        margin:10vw 2vw;
+    }
+    .rightsection {
+        width: 100%;
+    }
+    .footer{
+        width: 100%;
+        height: auto;
+    }
+    .footer-1{
+        font-size: 4vw;
+        height: auto;
+    }
+    .footer-1 p{
+        margin: 2vw 3vw;
+
+    }
+    .footer-content{
+        flex-direction: column;
+    }
+    .footer-2 h3{
+        font-size: large;
+    }
+    .footer-2 p{
+        font-size: 3vw;
+        margin: 1vw 0;
+    }
+    .footer-2 a{
+        font-size: 5vw;
+        margin: 1vw 0;
+        color: violet;
+    }
+    .footer-3 h3{
+        font-size: large;
+    }
+    .footer-3 li{
+        font-size: 3vw;
+        margin: 1vw 2vw;
+    }
+    .footer-4 h3{
+        width: 100%;
+        font-size: large;
+        margin: 2vw 2vw;
+    }
+    .footer-4 h2{
+        font-size: 4vw;
+        margin: 1vw 2vw;
+    }
+    .footer-4 p{
+        font-size: 3vw;
+        margin: 0 2vw;
+    }
+    .footer-4 a{
+        font-size: 5vw;
+        margin: 0 2vw;
+    }
+    .footer-5{
+        font-size: large;
+        padding: 2vw 0;
+    }
+    
+}
